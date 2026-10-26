@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="460" viewBox="0 0 1120 460" role="img" aria-labelledby="title desc">
+  <title id="title">Discovery workspace — simplified architecture</title>
+  <desc id="desc">Four stages: public observations, identity and validation, timestamped local storage, and a responsive card interface. Missing information stays unknown.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="m0 0 10 5-10 5z" fill="#567483"/></marker></defs>
+  <rect width="1120" height="460" rx="16" fill="#0c131d"/>
+  <text x="42" y="49" fill="#8bafc4" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">ARCHITECTURE STUDY</text>
+  <text x="42" y="94" fill="#e9f0f6" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="600">Reliable observations. Clear boundaries.</text>
+  <text x="42" y="124" fill="#91a6b9" font-family="Arial, Helvetica, sans-serif" font-size="15">Public data becomes evidence only after identity, timing and availability are checked.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(42 176)"><rect width="235" height="152" rx="10" fill="#131f2b" stroke="#293d4e"/><text x="20" y="32" fill="#7ea4bb" font-size="12">01</text><text x="20" y="63" fill="#e7eef4" font-size="19">Public observations</text><text x="20" y="94" fill="#8ea6ba" font-size="14">Links, metrics and artwork</text><text x="20" y="119" fill="#8ea6ba" font-size="14">Paced, bounded requests</text></g>
+    <g transform="translate(309 176)"><rect width="235" height="152" rx="10" fill="#14252e" stroke="#427181"/><text x="20" y="32" fill="#9fc9d5" font-size="12">02</text><text x="20" y="63" fill="#e7eef4" font-size="19">Resolve &amp; validate</text><text x="20" y="94" fill="#8ea6ba" font-size="14">Identity and schema checks</text><text x="20" y="119" fill="#8ea6ba" font-size="14">Explicit failure states</text></g>
+    <g transform="translate(576 176)"><rect width="235" height="152" rx="10" fill="#131f2b" stroke="#293d4e"/><text x="20" y="32" fill="#7ea4bb" font-size="12">03</text><text x="20" y="63" fill="#e7eef4" font-size="19">Local history</text><text x="20" y="94" fill="#8ea6ba" font-size="14">Timestamped snapshots</text><text x="20" y="119" fill="#8ea6ba" font-size="14">Additive SQLite migrations</text></g>
+    <g transform="translate(843 176)"><rect width="235" height="152" rx="10" fill="#131f2b" stroke="#293d4e"/><text x="20" y="32" fill="#7ea4bb" font-size="12">04</text><text x="20" y="63" fill="#e7eef4" font-size="19">Card workspace</text><text x="20" y="94" fill="#8ea6ba" font-size="14">Overview and evidence</text><text x="20" y="119" fill="#8ea6ba" font-size="14">Responsive, reduced motion</text></g>
+    <path d="M280 252h24M547 252h24M814 252h24" stroke="#567483" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M42 368h1036" stroke="#233544"/>
+    <circle cx="48" cy="403" r="4" fill="#8cc5d5"/><text x="63" y="408" fill="#a2b4c4" font-size="14">Unavailable ≠ zero</text>
+    <circle cx="370" cy="403" r="4" fill="#8cc5d5"/><text x="385" y="408" fill="#a2b4c4" font-size="14">History ≠ prediction</text>
+    <circle cx="702" cy="403" r="4" fill="#8cc5d5"/><text x="717" y="408" fill="#a2b4c4" font-size="14">Public metrics ≠ private analytics</text>
+  </g>
+</svg>

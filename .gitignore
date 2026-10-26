@@ -1,0 +1,15 @@
+.DS_Store
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+private/
+research-private/
+screenshots-private/
