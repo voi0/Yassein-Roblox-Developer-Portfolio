@@ -10,6 +10,18 @@ I work with AI assistance for research, implementation and iteration. My role is
 
 ## Selected work
 
+### One Button Factory
+
+**Implemented UI-only prototype · Luau / Rojo · Player testing pending**
+
+A server-authoritative arrangement puzzle built to test a mechanical hook before investing in 3D production. Six modules, four sockets and 360 legal arrangements; the client presents the workbench while the server validates and calculates every result.
+
+- 31 automated Luau checks, including exhaustive layouts and 331 viewport cases.
+- A local Studio smoke check through real client/server remotes.
+- A private twelve-person study workflow with 19 aggregation tests; no player outcomes claimed yet.
+
+[Read the prototyping case study →](CASE_STUDY_PROTOTYPING.md)
+
 ### Roblox discovery workspace
 
 **Implemented local application · Python / FastAPI / SQLite / JavaScript**
