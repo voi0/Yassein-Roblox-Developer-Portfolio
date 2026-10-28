@@ -59,17 +59,23 @@ The prototype's rate budget is a six-command burst, refilling at four per second
 
 The ScreenGui uses Roblox's safe-area rectangle, four ordered socket buttons, a bottom inventory and a 56px RUN button. Modules can be dragged or placed with two taps; an occupied source swaps with its destination. A pending command locks input until the server acknowledges it. A missed reply exposes Sync without blindly replaying the previous mutation.
 
-The same pure geometry module drives both the actual interface and the viewport tests. All interactive targets are at least 44 × 44 pixels within the tested usable dimensions. The smallest tested geometry is 320 × 480 portrait and 568 × 280 landscape. Geometry checks do not establish real-world touch usability.
+The same pure geometry module drives both the actual interface and the viewport tests. Normal layouts fit without scrolling from 320 × 480 portrait and 568 × 280 landscape usable viewports. Stage 2 adds a scrollable canvas for smaller safe areas, preserving interactive targets of at least 44 × 44 pixels instead of shrinking them. Sensor orientation is configured in StarterGui and the active PlayerGui. Rotation cancels unfinished local gestures without resetting the server session. Geometry checks do not establish real-world touch usability.
 
 ## Verification completed
 
-Checked during the 28 October 2026 continuation on macOS:
+Stage 1 checks, recorded during the 28 October 2026 continuation on macOS:
 
 - **31 Luau tests passed.** These cover all 360 legal layouts, all authored contract solutions, per-step clamping, invalid/forged payloads, stale revisions, duplicate runs, session isolation, delayed cleanup and 331 viewport cases. Input 2 produces 31 distinct final outputs, from 0 through 36; 360 layouts are not 360 unique answers.
 - **Pure modules and test runner passed strict Luau analysis.** All six source files and the separate Studio smoke script passed syntax compilation. Roblox-dependent type validation is not covered by the standalone analyzer.
 - **Rojo 7.7.0 built the local place.** The generated XML contains 19 mapped instances, including the expected scripts and two RemoteEvents, with zero 3D asset instances.
 - **A local Studio client/server smoke check passed.** Through real RemoteEvents it rejected a forged result, produced 7 then 10 for the two orders and advanced to a four-socket contract. The workbench was visually observed in Studio. This was a scripted integration check, not an actual phone drag test.
 - **19 private playtest-summary tests passed.** Unknowns, incomplete sessions, duplicate participants, mixed builds, contradictory no-action claims and malformed timing values cannot silently produce a passing study.
+
+### Stage 2 mobile preparation · 28 October 2026
+
+The updated build passes **32 Luau tests**, including **688 viewport case executions** across normal and small safe areas. Pure strict analysis and syntax compilation passed. Rojo 7.7.0 builds 20 mapped instances, now including StarterGui orientation, with zero 3D assets. A local release manifest records source and place-file hashes; no published destination is claimed.
+
+The private study tooling passes **34 Python tests**. It checks matching anonymous filenames, timing boundaries, historical-protocol separation, incomplete observations, contradictory records and exact decision thresholds. The actual blank template and command-line report path are covered. Synthetic fixtures remain separate from participant evidence. The earlier Studio integration check was not rerun against this new layout; actual phone input and cloud publication remain pending.
 
 ## The player evidence still needed
 
