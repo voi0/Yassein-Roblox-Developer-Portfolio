@@ -20,6 +20,6 @@ The portfolio identifies AI-assisted work rather than presenting every implement
 
 The intended game-development approach is modular, server-authoritative and conservative about persistence and purchases. Complex asset pipelines, bespoke physics and unnecessary integrations are scope decisions, not automatic signs of quality.
 
-This describes the approach I want future Roblox prototypes to demonstrate. It is not a claim that a commercial game using those systems has already shipped.
+One Button Factory now applies this approach through a pure arithmetic core, a server-owned controller and a bounded account model. The [verification index](verification-index.md) separates local checks from pending live integration. This is not a claim that a commercial game has shipped.
 
 [Back to portfolio](../README.md)

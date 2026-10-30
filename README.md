@@ -12,15 +12,16 @@ I work with AI assistance for research, implementation and iteration. My role is
 
 ### One Button Factory
 
-**Implemented UI-only prototype · Luau / Rojo · Player testing pending**
+**Persistent economy and procedural workshop · Luau / Rojo / Wally · Live integration pending**
 
-A server-authoritative arrangement puzzle built to test a mechanical hook before investing in 3D production. Six modules, four sockets and 360 legal arrangements; the client presents the workbench while the server validates and calculates every result.
+An arrangement puzzle developed from a zero-asset hook into a ten-family physical workshop. The server validates every machine and owns progression; session-locked profiles preserve solved layouts and a capped offline allowance.
 
-- 31 automated Luau checks, including exhaustive layouts and 331 viewport cases.
-- A local Studio smoke check through real client/server remotes.
-- A private twelve-person study workflow with 19 aggregation tests; no player outcomes claimed yet.
+- Bounded offline production: 20% of the saved rate, for at most ten hours away.
+- Server checks on world prompts, stored layouts, upgrade entitlement and timestamp replay.
+- Local automated checks and build inspection, with live storage and new phone interactions explicitly pending.
+- Earlier UI-only prototype preserved as an engineering comparison.
 
-[Read the prototyping case study →](CASE_STUDY_PROTOTYPING.md)
+[Economy and 3D architecture →](CASE_STUDY_ECONOMY_ARCHITECTURE.md) · [Hook prototyping →](CASE_STUDY_PROTOTYPING.md) · [Verification scope →](notes/verification-index.md)
 
 ### Roblox discovery workspace
 

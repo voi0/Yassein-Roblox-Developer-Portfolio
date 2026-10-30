@@ -4,7 +4,7 @@
 
 > Validating a 360-permutation math puzzle using zero 3D assets to verify engagement before capital expenditure.
 
-The engineering implementation is ready for a small playtest. **Engagement has not yet been verified.** This case study shows the system and the checks completed so far, not a launched game's performance.
+This case study preserves the Stage 1–2 hook implementation. The owner subsequently reported a successful twelve-person screen and authorized Stage 3; those reports are described below. The current implementation is covered in the [economy and 3D architecture case study](CASE_STUDY_ECONOMY_ARCHITECTURE.md). Neither case study claims a launched game’s performance.
 
 ## The constraint
 
@@ -77,13 +77,15 @@ The updated build passes **32 Luau tests**, including **688 viewport case execut
 
 The private study tooling passes **34 Python tests**. It checks matching anonymous filenames, timing boundaries, historical-protocol separation, incomplete observations, contradictory records and exact decision thresholds. The actual blank template and command-line report path are covered. Synthetic fixtures remain separate from participant evidence. The earlier Studio integration check was not rerun against this new layout; actual phone input and cloud publication remain pending.
 
-## The player evidence still needed
+## Cohort report and next stage · 29 October 2026
 
-The planned twelve-person first-encounter phone screen records unaided understanding (internal target 8/12), voluntary attempts of three further contracts (6/12), meaningful choice changes and first meaningful action time. Attempts and completions remain separate. The observation summary currently has **zero participants** and produces no verdict.
+The project owner reports **10/12 unaided introduction solves within 120 seconds** and **8/12 voluntary completions of three further contracts**. The reported results authorized Stage 3. Completion is stronger than attempting a contract, but the exact total who attempted three further contracts is not supplied. Neither are individual observation records, the frozen build identity or the original whole-session timing window.
 
-Server counters measure accepted actions. They cannot establish that someone understood unaided, acted voluntarily or made a meaningful decision. Those judgements remain human observations; the study does not substitute raw click counts for engagement. Native phone touch, rotation, reduced motion, latency recovery and first-use readability still need validation.
+The study tooling therefore keeps the attributed aggregate separate from its raw-observation audit, which still contains zero eligible individual records. Twelve explicitly synthetic examples demonstrate the recording format; they are not participant evidence. This distinction allows the authorized development decision to proceed without inventing observations.
 
-Persistence, purchase receipts, production assets and commercial claims are outside this disposable test. Passing it would justify a next experiment, not establish retention, revenue or a production-ready game.
+Server counters alone cannot establish unaided understanding, voluntary action or meaningful choice. The small reported screen does not establish D1 retention or revenue. The new physical interaction, camera and phone layout require their own tests; the older UI checks cannot validate them.
+
+[Stage 3](CASE_STUDY_ECONOMY_ARCHITECTURE.md) adds the procedural workshop and persistent economy. Purchases, imported production meshes and commercial performance remain outside the verified scope.
 
 ## Role and references
 
